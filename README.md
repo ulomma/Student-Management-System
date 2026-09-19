@@ -512,3 +512,77 @@ GitHub: https://github.com/aryalankit121
 ## License
 
 This project is licensed under the MIT License. See the **LICENSE** file for details.
+
+I'm---
+
+# My Deployment
+
+I deployed this Flask backend application to an AWS EC2 Ubuntu server and configured it for continuous operation and secure public access.
+
+## Deployment Stack
+
+- **Backend:** Python / Flask
+- **Application Server:** Gunicorn
+- **Server:** AWS EC2
+- **Operating System:** Ubuntu Linux
+- **Web Server / Reverse Proxy:** Nginx
+- **Firewall:** UFW
+- **HTTPS:** SSL/TLS
+- **Database:** SQLite
+
+## Deployment Process
+
+1. Cloned the backend repository onto an AWS EC2 server.
+2. Set up Python and a virtual environment.
+3. Installed the application's dependencies.
+4. Configured Gunicorn to serve the Flask application.
+5. Created a systemd service to keep the application running continuously.
+6. Configured Nginx as a reverse proxy.
+7. Configured UFW to control server access.
+8. Configured HTTPS using a DuckDNS domain and SSL/TLS.
+9. Tested the deployed backend through its public HTTPS endpoint.
+
+## Architecture
+
+Client → HTTPS → Nginx → Gunicorn → Flask → SQLite
+
+## What I Practiced
+
+- AWS EC2 deployment
+- Linux server administration
+- Python backend deployment
+- Flask application deployment
+- Gunicorn configuration
+- systemd service management
+- Nginx reverse proxy configuration
+- UFW firewall configuration
+- HTTPS configuration
+- Public API testing
+
+## Deployment Outcome
+
+The Flask backend was successfully deployed to AWS EC2 and configured to run continuously behind Nginx with HTTPS enabled.
+
+## Deployment Evidence
+
+The screenshots below document the deployment and server configuration.
+
+### 1. Flask Backend Running with Gunicorn
+
+The Flask backend was configured as a systemd service and verified to be running successfully.
+
+### 2. Nginx Reverse Proxy
+
+Nginx was configured and verified as an active reverse proxy for the Flask backend.
+
+### 3. UFW Firewall Configuration
+
+UFW was configured to allow the required network traffic for SSH, HTTP, and HTTPS.
+
+### 4. Public HTTPS Deployment
+
+The deployed Flask backend was successfully accessed through its public HTTPS endpoint.
+
+### 5. GitHub Repository
+
+The source code for the deployed backend is maintained in my GitHub repository.
