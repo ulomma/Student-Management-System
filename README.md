@@ -565,24 +565,32 @@ The Flask backend was successfully deployed to AWS EC2 and configured to run con
 
 ## Deployment Evidence
 
-The screenshots below document the deployment and server configuration.
-
 ### 1. Flask Backend Running with Gunicorn
 
 The Flask backend was configured as a systemd service and verified to be running successfully.
+
+![Flask backend running with Gunicorn](gunicorn-running.jpeg)
 
 ### 2. Nginx Reverse Proxy
 
 Nginx was configured and verified as an active reverse proxy for the Flask backend.
 
+![Nginx reverse proxy running](nginx-running.jpeg)
+
 ### 3. UFW Firewall Configuration
 
 UFW was configured to allow the required network traffic for SSH, HTTP, and HTTPS.
+
+![UFW firewall configuration](ufw-firewall.jpeg)
 
 ### 4. Public HTTPS Deployment
 
 The deployed Flask backend was successfully accessed through its public HTTPS endpoint.
 
+![Flask backend accessible through HTTPS](https-deployment.jpeg)
+
 ### 5. GitHub Repository
 
 The source code for the deployed backend is maintained in my GitHub repository.
+
+![Student Management System GitHub repository](github-repo.jpeg)
