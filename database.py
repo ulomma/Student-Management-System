@@ -2,7 +2,7 @@ import sqlite3
 from student import Student
 import csv
 
-DB_NAME = "students.db"
+DB_NAME = "data/students.db"
 
 def setup_database():
     connection = sqlite3.connect(DB_NAME)
